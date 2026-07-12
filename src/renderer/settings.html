@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+    <meta charset="UTF-8">
+    <title>Glorious Battery</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <div>
+            <h1>Glorious Battery</h1>
+            <div class="subtitle">
+                Settings
+            </div>
+        </div>
+
+        <div class="status">
+            <div id="batteryText">
+                🔋 --%
+            </div>
+            <div id="chargeText">
+                Waiting for device...
+            </div>
+            <div id="productText">
+                -
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="setting">
+            <div>
+                <div class="title">
+                    Notifications
+                </div>
+                <div class="desc">
+                    Notify when battery is low
+                </div>
+            </div>
+
+            <label class="switch">
+                <input
+                    id="notify"
+                    type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+        </div>
+        <div class="setting">
+
+            <div>
+                <div class="title">
+                    Start with Windows
+                </div>
+                <div class="desc">
+                    Launch automatically after login
+                </div>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    id="startup"
+                    type="checkbox">
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <div class="setting">
+
+            <div>
+
+                <div class="title">
+                    Minimize to tray
+                </div>
+
+                <div class="desc">
+                    Closing hides the app
+                </div>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    id="tray"
+                    type="checkbox">
+
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting">
+
+            <div>
+                <div class="title">
+                    Update interval
+                </div>
+                <div class="desc">
+                    Refresh battery status
+                </div>
+            </div>
+
+            <div class="intervalBox">
+                <input
+                    id="interval"
+                    type="number"
+                    min="2"
+                    max="300">
+
+                <span>sec</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Kazut0_
+    </div>
+
+</div>
+<script src="settings.js"></script>
+</body>
+</html>

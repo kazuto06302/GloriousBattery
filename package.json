@@ -1,0 +1,47 @@
+{
+  "name": "glorious-battery",
+  "version": "1.0.0",
+  "description": "Battery monitor for Glorious Wireless Mouse",
+  "main": "src/main.js",
+  "author": "kzt",
+  "license": "MIT",
+  "productName": "Glorious Battery",
+  "asar": true,
+  "scripts": {
+    "start": "npx electron .",
+    "build": "npx electron-builder"
+  },
+  "build": {
+    "appId": "com.kzt.gloriousbattery",
+    "productName": "Glorious Battery",
+    "directories": {
+      "output": "dist"
+    },
+  "files": [
+    "src/**/*",
+    "node_modules/@napi-rs/**/*",
+    "node_modules/node-hid/**/*",
+    "package.json"
+  ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico",
+      "extraResources": []
+    },
+    "extraMetadata": {},
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.2",
+    "node-hid": "^3.3.0"
+  },
+  "devDependencies": {
+    "electron": "^43.1.0",
+    "electron-builder": "^26.15.3"
+  }
+}
